@@ -2,11 +2,11 @@
 import { getTasks } from "./task";
 
 //Función para visualizar las tareas
-export const renderTask = () => {
+export const renderTasks = () => {
 const taskList = document.getElementById("task-list");
 taskList.innerHTML = "";
-const task = getTasks();
-task.forEach((task) => {
+const tasks = getTasks();
+tasks.forEach((task) => {
     const li = document.createElement("li");
     li.setAttribute("data-id", task.id)
 
